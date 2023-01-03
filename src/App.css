@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.App{
+  background-color: rgb(114, 112, 112);
+  height: 1000px;
+  width: 210vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  
+    position: fixed; /* make the h1 fixed to the top of the page */
+    top: 0; /* position the h1 at the top of the page */
+    left: 50%; /* position the h1 at the horizontal center of the page */
+    transform: translateX(-50%); /* adjust the horizontal position to center the h1 */
+    width: 100%; /* make the h1 span the full width of the page */
+    text-align: center; /* center the text within the h1 */
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgb(89, 181, 9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid rgb(199, 124, 124);
+  border-radius: 5px;
+  background-color: rgb(20, 81, 81);
+  position: absolute;
+  top: 13%;
+  left: 25%;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input[type="text"]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(134, 133, 133);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgb(171, 5, 5);
+}
+
+form input[type="submit"] {
+  width: 100%;
+  background-color: #daa453;
   color: white;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+form input[type="submit"]:hover {
+  background-color: #573603;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.eventListReturn{
+  position: relative;
+  left: 27%;
+  top: 45%;
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+
 }
